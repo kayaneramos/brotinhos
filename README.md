@@ -1,4 +1,4 @@
-# 🌱 Brotinhos
+<h1 align="center">brotinhos</h1>
 
 Brotinhos é uma aplicação de produtividade gamificada com estética cozy e pixel art. A ideia é transformar as tarefas do dia em pequenos brotinhos que você planta, cultiva e vê florescer conforme são concluídas.
 
