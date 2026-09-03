@@ -4,21 +4,21 @@ Brotinhos é uma aplicação de produtividade gamificada com estética cozy e pi
 
 ## Funcionalidades
 
--  Adicionar novos brotinhos
--  Marcar tarefas como concluídas
--  Acompanhar o crescimento do jardim
--  Salvar tarefas com localStorage
--  Efeitos sonoros interativos
--  Visualizar a colheita e o progresso do dia
--  Aplicação desktop desenvolvida com Electron
+• Adicionar novos brotinhos  
+• Marcar tarefas como concluídas  
+• Acompanhar o crescimento do jardim  
+• Salvar tarefas com localStorage  
+• Efeitos sonoros interativos  
+• Visualizar a colheita e o progresso do dia  
+• Aplicação desktop desenvolvida com Electron  
 
 ## Tecnologias
 
-- HTML
-- CSS
-- JavaScript
-- Node.js
-- Electron
+• HTML  
+• CSS  
+• JavaScript  
+• Node.js  
+• Electron  
 
 ## Como executar
 
