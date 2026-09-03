@@ -33,3 +33,16 @@ Depois execute:
 ```bash
 npm start
 ```
+## Telas do projeto
+
+### Tela inicial
+
+![Tela inicial](tela-inicial.jpeg)
+
+### Jardim
+
+![Jardim](jardim.jpeg)
+
+### Colheita
+
+![Colheita](colheita.jpeg)
