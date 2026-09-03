@@ -26,3 +26,10 @@ Instale as dependências:
 
 ```bash
 npm install
+```
+
+Depois execute:
+
+```bash
+npm start
+```
