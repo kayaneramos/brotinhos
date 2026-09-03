@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brotinhos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+  <!-- tela inicial -->
+
+
+  <section class="screen active" id="homeScreen">
+    <div class="card home-card">
+      <div class="home-mascots">
+  <img src="assets/brotinho.png.png" class="sprout-img" alt="Brotinho">
+</div>
+
+
+      <h1>brotinhos</h1>
+
+      <p>Cultive seus brotinhos com carinho.</p>
+
+      <button id="startBtn">Entrar no Jardim</button>
+    </div>
+  </section>
+
+
+  <!-- tela principal -->
+
+
+<section class="screen" id="gardenScreen">
+  <div class="card">
+
+    <h2>Jardim dos Brotinhos</h2>
+
+    <div class="garden-top">
+
+     <p id="dateText"></p>
+
+      <div class="progress-area">
+        <p>Crescimento do jardim</p>
+
+        <div class="pixel-progress" id="pixelProgress"></div>
+
+        <span id="progressText">0%</span>
+      </div>
+
+    </div>
+
+    <div class="input-area">
+      <input type="text" id="sproutInput" placeholder="Digite um novo brotinho...">
+      <button id="addBtn">Plantar</button>
+    </div>
+    
+
+   <ul id="sproutList"></ul>
+
+
+
+    <button id="finishBtn">
+    <img src="assets/cogumelo.png" class="mushroom-icon">
+    Hora de Descansar
+</button>
+
+  </div>
+</section>
+
+
+  <!-- tela final -->
+
+
+  <section class="screen" id="finalScreen">
+    <div class="card">
+      <div class="final-mascot">
+  <img src="assets/brotinho.png.png" alt="Brotinho">
+</div>
+
+<h2>Colheita do Dia</h2>
+
+      <p id="finalText">Hoje seus brotinhos cresceram.</p>
+
+      <button id="backBtn">Voltar ao Jardim</button>
+    </div>
+    </section>
+
+  <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+
+  <audio id="clickSound" src="assets/click.mp3"></audio>
+
+  <audio id="bloomSound" src="assets/bloom.mp3"></audio>
+
+  <script src="script.js"></script>
+
+
+
+
+</body>
+</html>

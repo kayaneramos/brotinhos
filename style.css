@@ -1,0 +1,746 @@
+
+@font-face{
+    font-family: "SproutPixel";
+    src: url("fonts/pixelFont-7-8x14-sproutLands.ttf");
+}
+
+
+/* ===== fundo ===== */
+
+
+body{
+    margin:0;
+    padding:0;
+    min-height:100vh;
+
+    background-color:#b8d66b;
+
+    background-image:
+        linear-gradient(
+            0deg,
+            rgba(255,255,255,0.08) 50%,
+            transparent 50%
+        ),
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,0.08) 50%,
+            transparent 50%
+        );
+
+    background-size:80px 80px;
+
+    animation: bgMove 20s linear infinite;
+
+    font-family:"Pixelify Sans", sans-serif;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
+/* ===== telas ===== */
+
+
+.screen{
+    display:none;
+    width:100%;
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+}
+
+.screen.active{
+    display:flex;
+}
+
+
+/* ===== card principal ===== */
+
+
+.card{
+    width:420px;
+    background:#e3bf8c;
+    border:4px solid #f6e3bd;
+    border-radius:14px;
+    padding:30px;
+    box-shadow:
+        inset 0 0 0 4px #b9895f,
+        0 8px 0 rgba(83, 91, 55, 0.35);
+    text-align:center;
+    position:relative;
+}
+
+
+/* ===== tela inicial ===== */
+
+
+.home-card{
+    min-height:310px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+
+.home-card h1{
+    font-family:"Gaegu", cursive;
+    color:#79A946;
+    font-size:64px;
+    margin:8px 0 14px;
+    letter-spacing:2px;
+
+    text-shadow:
+        -3px -3px 0 #FFF8E8,
+         3px -3px 0 #FFF8E8,
+        -3px  3px 0 #FFF8E8,
+         3px  3px 0 #FFF8E8,
+         6px  6px 0 #6E7D52;
+}
+
+
+.home-card p{
+    color:#6E5B43;
+    font-size:16px;
+    line-height:1.6;
+    margin:0 0 24px;
+    text-align:center;
+}
+
+.decor{
+
+    font-size:40px;
+
+    margin-bottom:15px;
+}
+
+
+/* ===== botões ===== */
+
+
+button{
+    background:#e3bf8c;
+    color:#fff7df;
+    border:3px solid #f6e3bd;
+    border-radius:8px;
+    padding:12px 24px;
+    cursor:pointer;
+    font-family:inherit;
+    font-size:18px;
+    box-shadow:
+        inset 0 0 0 3px #b9895f,
+        0 5px 0 #8c6b4f;
+    transition:0.15s;
+}
+
+button:hover{
+    transform:translateY(2px);
+    box-shadow:
+        inset 0 0 0 3px #b9895f,
+        0 3px 0 #8c6b4f;
+}
+
+
+/* ===== input ===== */
+
+
+input{
+
+    width:90%;
+
+    padding:12px;
+
+    border-radius:15px;
+
+    border:2px solid #D9D2C7;
+
+    margin-bottom:10px;
+
+    font-size:15px;
+}
+
+
+/* ===== lista ===== */
+
+
+#sproutList{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+
+#sproutList li{
+
+    background:#F8F4ED;
+
+    padding:12px;
+
+    margin-bottom:10px;
+
+    border-radius:15px;
+
+    text-align:left;
+}
+
+
+/* ===== barra ===== */
+
+
+.progress-bar{
+
+    width:100%;
+
+    height:20px;
+
+    background:#EAE4DB;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    margin-top:10px;
+}
+
+#progressFill{
+
+    width:0%;
+
+    height:100%;
+
+    background:#A8B99B;
+
+    transition:0.3s;
+}
+
+
+/* ===== títulos ===== */
+
+
+h2{
+
+    color:#6E7D52;
+}
+
+
+/* ===== mascote ===== */
+
+
+.mascot{
+    display:flex;
+    justify-content:center;
+    margin-bottom:20px;
+}
+
+.mascot iconify-icon{
+    font-size:75px;
+    filter: drop-shadow(0 5px 0 rgba(110, 125, 82, 0.25));
+    animation: float 2.5s ease-in-out infinite;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+
+/* ===== tela do jardim ===== */
+
+
+#gardenScreen .card{
+    max-width: 480px;
+}
+
+#gardenScreen h2{
+    font-size: 34px;
+    color: #6E7D52;
+    margin-bottom: 5px;
+}
+
+#dateText{
+    color: #8B7E74;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.progress-area{
+    background: #F8F4ED;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.progress-area p{
+    color: #6E7D52;
+    font-size: 20px;
+    margin: 0 0 8px;
+}
+
+.input-area{
+    background: #F8F4ED;
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+#sproutList li{
+    font-size: 20px;
+    color: #5F6048;
+    border: 2px solid #E0D6C8;
+}
+
+#finishBtn{
+    background: #D86B7A;
+    box-shadow: 0 4px 0 #B95765;
+}
+
+.mini-mascot iconify-icon{
+    font-size: 55px;
+    filter: drop-shadow(0 4px 0 rgba(110, 125, 82, 0.2));
+}
+
+
+/* ===== layout tela jardim ===== */
+
+#gardenScreen .card{
+    width: 90%;
+    max-width: 760px;
+
+    background:#e3bf8c;
+    border:4px solid #f6e3bd;
+    border-radius:14px;
+
+    padding:30px;
+
+    box-shadow:
+        inset 0 0 0 4px #b9895f,
+        0 8px 0 rgba(83, 91, 55, 0.35);
+}
+
+#gardenScreen .mini-mascot,
+#gardenScreen h2{
+    display:none;
+}
+
+.garden-top{
+    display:grid;
+    grid-template-columns:170px 1fr;
+    gap:25px;
+    margin-bottom:22px;
+}
+
+#dateText{
+    background:#fff7df;
+    border:4px solid #f6e3bd;
+    border-radius:14px;
+
+    box-shadow:
+        inset 0 0 0 3px #b9895f,
+        0 5px 0 #8c6b4f;
+
+    padding:18px;
+
+    color:#6E7D52;
+    font-size:20px;
+    font-weight:bold;
+    margin:0;
+
+    width:130px;
+    height:95px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    line-height:1.3;
+}
+
+.progress-area{
+    background:#fff7df;
+    border:4px solid #f6e3bd;
+    border-radius:14px;
+
+    box-shadow:
+        inset 0 0 0 3px #b9895f;
+
+    padding:20px;
+    margin:0;
+}
+
+.progress-area p{
+    color:#6E7D52;
+    font-size:20px;
+    margin:0 0 10px;
+}
+
+.input-area{
+    background:transparent;
+    padding:0;
+    margin-bottom:22px;
+
+    display:flex;
+    gap:10px;
+}
+
+#sproutInput{
+    width:100%;
+    background:#fff7df;
+color:#6E5B43;
+    border:4px solid #f6e3bd;
+    border-radius:14px;
+    box-shadow:
+        inset 0 0 0 3px #b9895f;
+
+    font-family:"Pixelify Sans", sans-serif;
+    font-size:18px;
+    padding:12px 16px;
+    margin:0;
+}
+
+#addBtn{
+    white-space:nowrap;
+}
+
+#sproutList{
+    list-style:none;
+
+    background:#fff7df;
+
+    border:4px solid #f6e3bd;
+
+    border-radius:14px;
+
+    box-shadow:
+        inset 0 0 0 3px #b9895f;
+
+    min-height:260px;
+
+    padding:20px;
+
+    margin:0 0 25px;
+
+    position:relative;
+}
+
+#sproutList li{
+    background:#e3bf8c;
+    border:3px solid #f6e3bd;
+    border-radius:8px;
+
+    box-shadow:
+        inset 0 0 0 2px #b9895f;
+
+    padding:10px 14px;
+    margin-bottom:10px;
+
+    color:#6E5B43;
+    font-size:20px;
+}
+
+#finishBtn{
+    background:#d86b7a;
+    box-shadow:
+        inset 0 0 0 3px #b95765,
+        0 5px 0 #8c4b55;
+
+    display:block;
+    margin:0 auto;
+
+    font-size:20px;
+}
+
+
+/* ===== tela final ===== */
+
+
+#finalScreen .card{
+    width: 90%;
+    max-width: 500px;
+}
+
+#finalScreen h2{
+    font-size: 38px;
+    color: #6E7D52;
+    margin-bottom: 10px;
+}
+
+#finalScreen::before{
+    content: "";
+}
+
+#backBtn{
+    background: #A8B99B;
+    box-shadow: 0 4px 0 #8FA37F;
+    font-size: 18px;
+}
+
+
+/* ===== mascote tela inicial ===== */
+
+
+.home-mascots{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.sprout-img{
+    width:90px;
+    image-rendering:pixelated;
+    animation:sproutSway 2s ease-in-out infinite;
+}
+
+@keyframes sproutSway{
+    0%, 100%{
+        transform:rotate(-5deg) translateY(0);
+    }
+
+    50%{
+        transform:rotate(6deg) translateY(-6px);
+    }
+}
+
+
+/* ===== barra de progresso pixel ===== */
+
+
+.pixel-progress{
+    display:flex;
+    gap:5px;
+    justify-content:center;
+    margin:14px auto 8px;
+}
+
+.pixel-block{
+    width:12px;
+    height:28px;
+    border-radius:3px;
+    background:#7B6A5E;
+    box-shadow:
+        inset 0 0 0 2px rgba(0,0,0,0.15);
+}
+
+.pixel-block.active{
+    background:#D9EF77;
+}
+
+
+/* ===== widget data ===== */
+
+
+#dateText{
+    background:#fff7df;
+    border-radius:25px;
+    padding:20px;
+    color:#6E7D52;
+    font-size:24px;
+    font-weight:bold;
+    margin:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.date-sign{
+    width:90px;
+    height:32px;
+    background-image:url("assets/weather-ui.png");
+    background-size:90px auto;
+    background-repeat:no-repeat;
+    background-position:0 -75px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:11px;
+    color:#8C6B4F;
+    image-rendering:pixelated;
+}
+
+
+@keyframes bgMove{
+    from{
+        background-position:0 0, 0 0;
+    }
+
+    to{
+        background-position:80px 80px, 80px 80px;
+    }
+}
+
+
+.mushroom-icon{
+    width:28px;
+    height:28px;
+
+    image-rendering:pixelated;
+
+    vertical-align:middle;
+
+    margin-right:8px;
+
+    animation:mushroomFloat 2s ease-in-out infinite;
+}
+
+@keyframes mushroomFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-3px);
+    }
+
+}
+
+.task-icon{
+    width:24px;
+    height:24px;
+    image-rendering:pixelated;
+    margin-right:10px;
+}
+
+#sproutList li{
+    display:flex;
+    align-items:center;
+}
+
+#sproutList li.done span{
+    text-decoration:line-through;
+    opacity:0.7;
+}
+
+
+@keyframes bloom{
+
+    0%{
+        transform:scale(0.3) rotate(-20deg);
+        opacity:0;
+    }
+
+    50%{
+        transform:scale(1.25) rotate(10deg);
+    }
+
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
+
+}
+
+.flower-animation{
+    animation:bloom 0.4s ease-out;
+}
+
+
+/* cursor normal */
+
+
+body{
+    cursor:url("assets/mouse.png"), auto;
+}
+
+
+/* cursor ao passar em cima dos botões */
+
+button:hover{
+    cursor:url("assets/mouse2.png"), pointer;
+}
+
+
+/* ===== ajustes da tela final ===== */
+
+.final-mascot{
+    display:flex;
+    justify-content:center;
+    margin-bottom:18px;
+}
+
+.final-mascot img{
+    width:85px;
+    image-rendering:pixelated;
+    animation:sproutSway 2s ease-in-out infinite;
+}
+
+.final-flower{
+    width:24px;
+    image-rendering:pixelated;
+    vertical-align:middle;
+    margin:0 4px;
+}
+
+#finalScreen .card{
+    background:#e3bf8c;
+    border:4px solid #f6e3bd;
+    border-radius:14px;
+    padding:38px;
+    box-shadow:
+        inset 0 0 0 4px #b9895f,
+        0 8px 0 rgba(83, 91, 55, 0.35);
+}
+
+#finalScreen h2{
+    font-family:"Pixelify Sans", sans-serif;
+    font-size:42px;
+    color:#6E7D52;
+    margin:0 0 22px;
+}
+
+#finalText{
+    font-size:20px;
+    line-height:1.7;
+    color:#6E5B43;
+    margin-bottom:22px;
+}
+
+
+.delete-btn{
+    margin-left:auto;
+
+    width:28px;
+    height:28px;
+
+    border:none;
+    border-radius:50%;
+
+    background:#d86b7a;
+    color:white;
+
+    font-size:14px;
+    font-weight:bold;
+
+    cursor:pointer;
+
+    padding:0;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.delete-btn:hover{
+    transform:scale(1.1);
+}
+
+
+
+
+
+
