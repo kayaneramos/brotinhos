@@ -5,7 +5,8 @@ Brotinhos é uma aplicação de produtividade gamificada com estética cozy e pi
 ## Funcionalidades
 
 • Adicionar novos brotinhos  
-• Marcar tarefas como concluídas  
+• Marcar tarefas como concluídas
+• Excluir brotinhos
 • Acompanhar o crescimento do jardim  
 • Salvar tarefas com localStorage  
 • Efeitos sonoros interativos  
