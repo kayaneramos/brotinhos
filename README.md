@@ -38,12 +38,12 @@ npm start
 
 ### Tela inicial
 
-![Tela inicial](tela-inicial.jpeg)
+![Tela inicial](screenshots/tela-inicial.jpeg)
 
 ### Jardim
 
-![Jardim](jardim.jpeg)
+![Jardim](screenshots/jardim.jpeg)
 
 ### Colheita
 
-![Colheita](colheita.jpeg)
+![Colheita](screenshots/colheita.jpeg)
